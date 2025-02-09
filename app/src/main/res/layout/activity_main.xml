@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/violet"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <TextView
@@ -19,51 +19,81 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.056"
-        android:shadowDx="30"
-        android:shadowDy="30"
         android:fontFamily="cursive"
-        android:textColor="@color/orangelight"
-        android:background=""
-        android:id="@+id/t1"
+        android:id="@+id/tv1"
+        android:textColor="@color/pink"
+        />
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sv"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        android:background="@color/silvergrey"
+        android:text="Here"
         />
 
     <ActionMenuView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@color/silvergrey"
-        android:outlineAmbientShadowColor="@color/black"
-        android:layout_marginEnd="36dp"
-        android:divider="@android:drawable/ic_menu_sort_by_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="26dp"
-        android:id="@+id/am"
-        />
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteX="282dp"
+        tools:layout_editor_absoluteY="22dp"
+        android:background="@color/silvergrey"/>
 
-    <SearchView
-        android:id="@+id/sv"
-        android:layout_width="351dp"
-        android:layout_height="43dp"
-        android:queryHint="Get your favourite recipes "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t1"
-        app:layout_constraintVertical_bias="0.339"
-        tools:layout_editor_absoluteX="3dp" />
+
+    <ImageView
+        android:layout_width="88dp"
+        android:layout_height="93dp"
+        android:src="@drawable/nonvegitarian"
+        tools:layout_editor_absoluteX="19dp"
+        android:id="@+id/nv"
+        tools:layout_editor_absoluteY="143dp"
+        android:shadowLayer="4dp"
+        android:shadowColor="#80000000"
+        android:shadowDx="2dp"
+        android:shadowDy="2dp"/>
+
+    <ImageView
+        android:layout_width="93dp"
+        android:layout_height="90dp"
+        android:src="@drawable/vegitarian"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="92dp"
+        android:src="@drawable/desserts"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="143dp" />
+
 
     <TextView
-        android:id="@+id/t1"
-        android:layout_width="328dp"
-        android:layout_height="124dp"
-        android:background=""
-        android:fontFamily="sans-serif-black"
-        android:shadowDx="30"
-        android:shadowDy="30"
-        android:text="Recommended Dishes"
-        android:textColor="@color/silvergrey"
-        android:textSize="70px"
-        app:layout_constraint="@+id/sv"
-        app:layout_constraintStart_toBottomtOf="parent"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="138dp" />
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="Inter"
+        android:text="Recommended  Dishes"
+        android:textColor="@color/white"
+        android:textSize="110px"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="256dp" />
+
+    <ImageView
+        android:layout_width="83dp"
+        android:layout_height="101dp"
+        android:background="@drawable/laddoo"
+        android:outlineAmbientShadowColor="@color/black"
+        android:src="@drawable/laddoo"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="281dp" />
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="107dp"
+        android:src="@drawable/dhokla"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="275dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
