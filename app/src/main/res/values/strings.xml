@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">p1</string>
+    <string name="app_name">EziiRecipe</string>
+    <string name="search">Find Your Favourite Recipes Here!</string>
+    <string name="rec">Reccommended Dishes</string>
+    <string name="app">vegi</string>
+    <string name="act2">Welcome to the Second Activity</string>
 </resources>

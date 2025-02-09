@@ -9,91 +9,129 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="EziiRecipe"
-        android:textSize="110px"
+        android:fontFamily="cursive"
+        android:text="@string/app_name"
+        android:textColor="@color/pink"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.056"
-        android:fontFamily="cursive"
-        android:id="@+id/tv1"
-        android:textColor="@color/pink"
-        />
+        app:layout_constraintVertical_bias="0.003" />
+
     <SearchView
+        android:id="@+id/sv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/sv"
-        app:layout_constraintTop_toBottomOf="@+id/tv1"
         android:background="@color/silvergrey"
-        android:text="Here"
+        android:text="@string/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="113dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="180dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vegitarian"
         />
 
-    <ActionMenuView
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        app:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteX="282dp"
-        tools:layout_editor_absoluteY="22dp"
-        android:background="@color/silvergrey"/>
-
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="142dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nonvegitarian" />
 
     <ImageView
-        android:layout_width="88dp"
-        android:layout_height="93dp"
-        android:src="@drawable/nonvegitarian"
-        tools:layout_editor_absoluteX="19dp"
-        android:id="@+id/nv"
-        tools:layout_editor_absoluteY="143dp"
-        android:shadowLayer="4dp"
-        android:shadowColor="#80000000"
-        android:shadowDx="2dp"
-        android:shadowDy="2dp"/>
-
-    <ImageView
-        android:layout_width="93dp"
-        android:layout_height="90dp"
-        android:src="@drawable/vegitarian"
-        tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="143dp" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="92dp"
-        android:src="@drawable/desserts"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="143dp" />
-
+        android:id="@+id/imageView3"
+        android:layout_width="118dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="160dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/desserts" />
 
     <TextView
-        android:id="@+id/tv2"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="Inter"
-        android:text="Recommended  Dishes"
-        android:textColor="@color/white"
-        android:textSize="110px"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="256dp" />
+        android:layout_marginTop="364dp"
+        android:fontFamily="cursive"
+        android:text="@string/rec"
+        android:textColor="@color/silvergrey"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="83dp"
-        android:layout_height="101dp"
-        android:background="@drawable/laddoo"
-        android:outlineAmbientShadowColor="@color/black"
-        android:src="@drawable/laddoo"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="281dp" />
+        android:id="@+id/imageView4"
+        android:layout_width="136dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="408dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chicken" />
 
     <ImageView
-        android:layout_width="96dp"
-        android:layout_height="107dp"
-        android:src="@drawable/dhokla"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="275dp" />
+        android:id="@+id/imageView5"
+        android:layout_width="154dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="408dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dhokla" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:contentDescription="@string/app_name"
+        android:layout_width="135dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="548dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/laddoo" />
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imageView7"
+        android:layout_width="158dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="572dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shahipaneer" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
