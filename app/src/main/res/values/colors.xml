@@ -4,8 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="violet">#F14A4AA9</color>
     <color name="silvergrey">#D3D3D3</color>
-    <color name="cyan">#43C6AC</color>
+    <color name="green">#C507E446</color>
     <color name="pink">#FF00CC</color>
     <color name="orangelight">#F3904F</color>
+    <color name="red">#FF2354</color>
 
 </resources>
